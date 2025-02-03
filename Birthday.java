@@ -1,5 +1,4 @@
-// Ari Kinney
-//lab 1 CS 1180 1.24.25
+
 import java.util.Scanner;
 public class Birthday {
     //This is the page that I used understand the using the primitive data types include

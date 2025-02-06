@@ -36,6 +36,6 @@ public class fullLabaryCode {
                 book = 10;
             }
         }
-        System.out.printf("%.2f%n", book);  // this is the format for the decimal point 
+        System.out.printf("The late fee of the book is %.2f%n", book);  // this is the format for the decimal point 
     }
 }

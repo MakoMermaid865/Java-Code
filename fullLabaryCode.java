@@ -1,5 +1,4 @@
-//Ari Kinney
-// Lab 3
+// Sorry for spelling this was a rushed code
 // Purpose: This program will determine the fine for a book that is late. 
 //The program will ask the user for the number of days the book is late and if they are a VIP member. If the user is a VIP member the fine will be $0.50 for the first 5 days, $2.50 for 6-10 days, and $5.00 for 11 or more days. If the user is not a VIP member the fine will be $1.00 for the first 5 days, $5.00 for 6-10 days, and $10.00 for 11 or more days.
 import java.util.Scanner;

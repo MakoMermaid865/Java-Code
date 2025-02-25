@@ -16,6 +16,12 @@ public class methodSquare {
         System.out.print("Enter a character: ");
         char character = scan.next().charAt(0); //Prompts for character
 
+        if (numN <= 0 ){ //this is able to take in negative number and will promt the user for error
+            System.out.println("Error: n cannot be negative");
+            System.exit(0);
+            }
+
+    
         //Call the printSquare method 
         printSquare(numN, character);
 
@@ -23,6 +29,12 @@ public class methodSquare {
         
 
     }
+    /**
+     * This method prints a square of a given size and character
+     * @param numN taking in the number of height the user wants
+     * @param character taking in the character the user wants to use
+     * @return void this method does not return anything it only prints the number of height and character
+     */
     public static void printSquare(int numN, char character) {
         //Draw the square
         for (int rows = 0; rows < numN; rows++) {

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.IOException;
 import java.io.*; //able to take in any file type
 //File
 
@@ -27,6 +26,29 @@ public class App {
         return file;
     }
 
+    /**
+     * Counts number of words in file
+     * A word is any text separated by a whitespace
+     * @param f the file to be used to count the words
+     * @return wordcount total in the file 
+     * @throws FileNotFoundException
+     */
+    public static int countWords(File f) {
+        int wordCount = 0;
+        try{
+            Scanner scnr = new Scanner(f);
+            while (scnr.hasNext()){
+                scnr.next();
+                wordCount++;
+            }
+            scnr.close();
+        }
+        catch (FileNotFoundException exception){
+            System.out.println("fileNotFound");
+        }
+        return wordCount;
+    }
+
     public static void main(String[] args) throws IOException {
         Scanner scnr = new Scanner (System.in);
         System.out.println("What is the name of the file? ");
@@ -36,6 +58,12 @@ public class App {
         String fileText = scnr.nextLine();
 
         writeText(fileName, fileText);
+            int wordCount = countWords(writeText(fileName, fileText));
+            File file = writeText(fileName, fileText);
+            System.out.println(file.getName() + " contains " + wordCount + " words.");
+            scnr.close();
+
+        } 
 
     }
-}
+

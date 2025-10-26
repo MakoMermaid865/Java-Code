@@ -27,4 +27,24 @@ public class Triangle {
             shape = scan.nextLine();
         }
     }
+
+    public void setBase(double base1) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setBase'");
+    }
+
+    public void setHeight(double height1) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setHeight'");
+    }
+
+    public void printInfo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'printInfo'");
+    }
+
+    public int getArea() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getArea'");
+    }
 }

@@ -11,13 +11,21 @@ public class CarValue {
         purchasePrice = price;
     }
 
-    public int setPurchasePrice(){
+    public int getPurchasePrice(){
         return purchasePrice;
     }
+
 
     public void setModelYear(int year){
         modelYear = year;
     }
+    public int getModelYear(){
+        return modelYear;
+    }
+    public int getCurrentValue(){
+        return currentValue;
+    }
+
     public void calcCurrentValue(int currentYear){
         double depreciateRate = 0.15;
         int age = currentYear - modelYear;
@@ -27,9 +35,9 @@ public class CarValue {
 
     public void printInfo(){
         System.out.println("Car info:");
-        System.out.println("Model year: " + );
-        System.out.println("Purchase price: " + );
-        System.out.println("Current valur: " + );
+        System.out.println("Model year: " + modelYear);
+        System.out.println("Purchase price: " + purchasePrice );
+        System.out.println("Current valur: " + currentValue);
 
     }
 
@@ -47,5 +55,5 @@ public static void main(String[] args) {
     myCar.calcCurrentValue(userCurrentYear);
     
     myCar.printInfo();
-   }
+}
 }

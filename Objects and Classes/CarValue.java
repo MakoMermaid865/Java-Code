@@ -34,10 +34,10 @@ public class CarValue {
     }
 
     public void printInfo(){
-        System.out.println("Car info:");
-        System.out.println("Model year: " + modelYear);
-        System.out.println("Purchase price: " + purchasePrice );
-        System.out.println("Current valur: " + currentValue);
+        System.out.println("Car's information:");
+        System.out.println("  Model year: " + modelYear);
+        System.out.println("  Purchase price: $" + purchasePrice );
+        System.out.println("  Current valur: $" + currentValue);
 
     }
 

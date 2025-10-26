@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Team {
-   // TODO: Declare private fields - name, wins, losses
+      // TODO: Declare private fields - name, wins, losses
 private String name;
 private int wins;
 private int losses;
@@ -46,10 +46,10 @@ public double getWinPercentage(){
         double pct = getWinPercentage();
         System.out.printf("Win percentage: %.2f%n", pct);
         if (pct >= 0.5){
-            System.out.println("Congradualtions, Team" + name + " has a winning averaga!" );
+            System.out.println("Congratulations, Team " + name + " has a winning average!" );
         }
         else{
-            System.out.println("Team " + name + " has a losing average"); 
+            System.out.println("Team " + name + " has a losing average."); 
         }
     }
 
